@@ -13,7 +13,17 @@ Stockroom is a full-stack inventory management application for computer and IT h
 - Optional item image upload, preview, replacement, and deletion
 - Responsive interface built with React and Tailwind CSS
 - REST API built with Spring Boot, Spring Data JPA, and MySQL
+## Work in progress
 
+The following features are planned for future releases:
+
+- User authentication with secure login and logout flows
+- Password hashing, password reset, and account management
+- JWT or session-based API security
+- Protected frontend routes and permission-aware actions
+- Audit logs for inventory, stock, category, and user changes
+- Automated tests for backend services, API endpoints, and frontend workflows
+- Reporting and export features for inventory and stock activity
 ## Tech stack
 
 ### Frontend
