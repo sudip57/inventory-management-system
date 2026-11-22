@@ -18,12 +18,8 @@ Stockroom is a full-stack inventory management application for computer and IT h
 
 ### Frontend
 
-- React 18
-- Vite
-- React Router
+- React
 - Tailwind CSS
-- Lucide React icons
-- IBM Plex Sans and IBM Plex Mono
 
 ### Backend
 
@@ -31,7 +27,7 @@ Stockroom is a full-stack inventory management application for computer and IT h
 - Spring Boot 3.3
 - Spring Web
 - Spring Data JPA / Hibernate
-- MySQL 8+
+- MySQL
 - Maven
 
 ## Project structure
