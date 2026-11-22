@@ -1,0 +1,91 @@
+/*
+  Global typography. Headings, body copy, links and helper text are styled
+  once here so pages never repeat font sizes or colours.
+*/
+
+@layer base {
+  html {
+    font-family: theme('fontFamily.sans');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-canvas text-[15px] leading-relaxed text-ink-800;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-ink-900;
+  }
+
+  h1 {
+    @apply text-[26px] font-semibold leading-tight tracking-tight;
+  }
+
+  h2 {
+    @apply text-lg font-semibold leading-snug tracking-tight;
+  }
+
+  h3 {
+    @apply text-[15px] font-semibold leading-snug;
+  }
+
+  h4 {
+    @apply text-xs font-medium uppercase tracking-wider text-ink-500;
+  }
+
+  p {
+    @apply text-ink-600;
+  }
+
+  a {
+    @apply text-brand-600 underline-offset-2 hover:underline;
+  }
+
+  small {
+    @apply text-xs text-ink-500;
+  }
+
+  strong {
+    @apply font-semibold text-ink-900;
+  }
+
+  code,
+  kbd,
+  samp {
+    @apply font-mono text-[0.85em];
+  }
+
+  ::selection {
+    @apply bg-brand-100 text-ink-900;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-500/40;
+  }
+}
+
+@layer components {
+  /* Small uppercase label used above values and table headers */
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-wider text-ink-500;
+  }
+
+  .text-muted {
+    @apply text-ink-500;
+  }
+
+  /* Numbers line up in tables and stat strips */
+  .num {
+    @apply tabular-nums;
+  }
+
+  /* SKU / model strings */
+  .code-text {
+    @apply font-mono text-[13px] text-ink-700;
+  }
+}

@@ -1,0 +1,7 @@
+/* @import rules must come first; Vite inlines them before Tailwind runs. */
+@import './typography.css';
+@import './components.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
